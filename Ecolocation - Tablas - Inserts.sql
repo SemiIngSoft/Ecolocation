@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-10-2018 a las 19:34:15
+-- Tiempo de generación: 04-10-2018 a las 19:45:25
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -29,17 +29,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `centroderecoleccion` (
   `id` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `ubicacion` varchar(60) NOT NULL
+  `ubicacion` varchar(60) NOT NULL,
+  `domicilio` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `centroderecoleccion`
 --
 
-INSERT INTO `centroderecoleccion` (`id`, `nombre`, `ubicacion`) VALUES
-(1, 'San Pedro Tlaquepaque', '20.59257745,-103.3388802826151'),
-(2, 'San Juan de Dios', '20.7136537,-103.3353316'),
-(3, 'Andares', '20.7105609,-103.4126405');
+INSERT INTO `centroderecoleccion` (`id`, `nombre`, `ubicacion`, `domicilio`) VALUES
+(1, 'San Pedro Tlaquepaque', '20.59257745,-103.3388802826151', 'San Pedro Tlaquepaque'),
+(2, 'San Juan de Dios', '20.7136537,-103.3353316', 'San Juan de Dios'),
+(3, 'Andares', '20.7105609,-103.4126405', 'Andares');
 
 -- --------------------------------------------------------
 
