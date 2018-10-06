@@ -197,7 +197,7 @@ ALTER TABLE `ciudadano`
 ALTER TABLE `peticion`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `usuarioempresa`
+-- AUTO_INCREMENT for table `usuarioempresa `
 --
 ALTER TABLE `usuarioempresa`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
