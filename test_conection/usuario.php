@@ -3,7 +3,7 @@
     private $host = "localhost";
     private $dbname = "ecolocation";
     private $user = "root";
-    private $password = "nano199699";
+    private $password = "";
     private $conexion = null;
     private $char = array(\PDO::MYSQL_ATTR_INIT_COMMAND =>  'SET NAMES utf8',\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         
