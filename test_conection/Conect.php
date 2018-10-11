@@ -21,7 +21,6 @@ function CloseCon($conn)
    
 ?>
 
-
 <?php
  
 $conn = OpenCon();
