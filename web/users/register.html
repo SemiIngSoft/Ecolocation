@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Heroic Features - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+  <!-- Font Awesome -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
+  <!-- Font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!--<nav class="navbar navbar-expand-lg fixed-top navbar-green">-->
+    <div class="container">
+      <a class="navbar-brand" href="#">Ecolocation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-4 mb-4">
+    <div class="col-lg-6 mx-auto">
+      <div class="card">
+        <h5 class="card-header info-color white-text text-center py-4"> <strong>Sign up</strong> </h5>
+        <div class="card-body px-lg-5 pt-0">
+          <form style="color: #757575;">
+              <div class="md-form form-group">
+                <i class="far fa-user prefix"></i>
+                <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                <label for="materialRegisterFormFirstName">First name</label>
+              </div>
+              <div class="md-form form-group">
+                <i class="far fa-user prefix"></i>
+                <input type="text" id="materialRegisterFormLastName" class="form-control">
+                <label for="materialRegisterFormLastName">Last name</label>
+
+              </div>
+              <div class="md-form form-group">
+                <i class="far fa-envelope prefix"></i>
+                <input type="email" id="materialRegisterFormEmail" class="form-control">
+                <label for="materialRegisterFormEmail">E-mail</label>
+              </div>
+              <div class="md-form form-group">
+                <i class="fas fa-key prefix"></i>
+                <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                <label for="materialRegisterFormPassword">Password</label>
+
+              </div>
+              <div class="md-form form-group">
+
+                <i class="fas fa-key prefix"></i>
+                <input type="password" id="materialRegisterFormPassword2" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                <label for="materialRegisterFormPassword2">Password Confirmation</label>
+                <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4"> At least 8 characters and 1 digit </small>
+              </div>
+
+              <div class="md-form form-group">
+                <i class="fas fa-phone prefix"></i>
+                <input type="text" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
+                <label for="materialRegisterFormPhone">Phone number</label>
+              </div>
+              <div class="md-form form-group">
+                <i class="fas fa-map-marked-alt prefix"></i>
+                <input type="text" id="calle" class="form-control" aria-describedby="MaterialMapDisplay" placeholder="Domicilio" disabled>
+                <label for="calle">Domicilio</label>
+                <button type="button" class="btn btn-primary map">Mapa</button>
+                <button class="btn btn-success d-none" id="btnG"> <i class="fas fa-map-marked-alt"></i></button>
+                <small id="add" class="d-block d-none">*Presiona el boton verde para que obtengamos tu domicilio</small>
+                <div class="card">
+
+                  <div  id="map" class="z-depth-1 d-none" style="height: 500px">
+
+                </div>
+
+
+              </div>
+            <button tabindex="0"  class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+            <div class="text-center">
+              <hr>
+              <p>¿ Ya estas registrado? <a href="login.html"> <em>Sign in. </em></a> </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Ecolocation 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Google Maps Map -->
+
+
+
+
+
+
+
+<!--
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_nzqNDBfJopGdzH2sNBbgHS-iotxkN_c&callback=initMap" async defer></script>
+-->
+
+
+    <!-- Bootstrap core JavaScript -->
+
+    <!--<script src="../vendor/jquery/query.min.js"></script>-->
+    <!--
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_nzqNDBfJopGdzH2sNBbgHS-iotxkN_c&callback=initMap">
+    </script>
+    <script  src="../js/app.js"></script>
+    <!--
+    <script>
+      var map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {
+            lat: -34.397,
+            lng: 150.644
+          },
+          zoom: 8
+        });
+      }
+    </script>-->
+
+</body>
+
+</html>
