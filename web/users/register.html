@@ -67,42 +67,43 @@
           <form style="color: #757575;">
               <div class="md-form form-group">
                 <i class="far fa-user prefix"></i>
-                <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                <input type="text" id="materialRegisterFormFirstName" name = "pnombre" class="form-control" required>
                 <label for="materialRegisterFormFirstName">First name</label>
               </div>
               <div class="md-form form-group">
                 <i class="far fa-user prefix"></i>
-                <input type="text" id="materialRegisterFormLastName" class="form-control">
+                <input type="text" id="materialRegisterFormLastName" name="apellidos" class="form-control" required>
                 <label for="materialRegisterFormLastName">Last name</label>
 
               </div>
               <div class="md-form form-group">
                 <i class="far fa-envelope prefix"></i>
-                <input type="email" id="materialRegisterFormEmail" class="form-control">
+                <input type="email" id="materialRegisterFormEmail" name="email" class="form-control" required>
                 <label for="materialRegisterFormEmail">E-mail</label>
               </div>
               <div class="md-form form-group">
                 <i class="fas fa-key prefix"></i>
-                <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                <input type="password" id="materialRegisterFormPassword" name="password"class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
                 <label for="materialRegisterFormPassword">Password</label>
 
               </div>
               <div class="md-form form-group">
 
                 <i class="fas fa-key prefix"></i>
-                <input type="password" id="materialRegisterFormPassword2" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                <input type="password" id="materialRegisterFormPassword2" name= "passwordcon"class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
                 <label for="materialRegisterFormPassword2">Password Confirmation</label>
                 <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4"> At least 8 characters and 1 digit </small>
               </div>
 
               <div class="md-form form-group">
                 <i class="fas fa-phone prefix"></i>
-                <input type="text" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
+                <input type="text" id="materialRegisterFormPhone" name="telefono" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
                 <label for="materialRegisterFormPhone">Phone number</label>
               </div>
               <div class="md-form form-group">
                 <i class="fas fa-map-marked-alt prefix"></i>
-                <input type="text" id="calle" class="form-control" aria-describedby="MaterialMapDisplay" placeholder="Domicilio" disabled>
+                <input type="text" id="calle" name="calle" class="form-control" aria-describedby="MaterialMapDisplay" placeholder="Domicilio" disabled>
+                <input type="hidden" id="geolocation" name="geolocation">
                 <label for="calle">Domicilio</label>
                 <button type="button" class="btn btn-primary map">Mapa</button>
                 <button class="btn btn-success d-none" id="btnG"> <i class="fas fa-map-marked-alt"></i></button>
@@ -112,6 +113,7 @@
                   <div  id="map" class="z-depth-1 d-none" style="height: 500px">
 
                 </div>
+
 
 
               </div>
