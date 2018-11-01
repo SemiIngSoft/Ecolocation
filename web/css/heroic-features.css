@@ -67,3 +67,14 @@ a{
 .popover{
     max-width: 100%; /* Max Width of the popover (depending on the container!) */
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
