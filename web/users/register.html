@@ -72,9 +72,14 @@
               </div>
               <div class="md-form form-group">
                 <i class="far fa-user prefix"></i>
-                <input type="text" id="materialRegisterFormLastName" name="apellidos" class="form-control" required>
-                <label for="materialRegisterFormLastName">Last name</label>
+                <input type="text" id="materialRegisterFormLastNameM" name="apellidoP" class="form-control" required>
+                <label for="materialRegisterFormLastName">Apellido Paterno</label>
 
+              </div>
+              <div class="md-form from-group">
+                <i class="far fa-user prefix"></i>
+                <input type="text" id="materialRegisterFormLastNameF" name="apellidoM" class="form-control" required>
+                <label for="materialRegisterFormLastNameF">Apellido Materno</label>
               </div>
               <div class="md-form form-group">
                 <i class="far fa-envelope prefix"></i>
@@ -102,7 +107,8 @@
               </div>
               <div class="md-form form-group">
                 <i class="fas fa-map-marked-alt prefix"></i>
-                <input type="text" id="calle" name="calle" class="form-control" aria-describedby="MaterialMapDisplay" placeholder="Domicilio" disabled>
+                <input type="text" id="calle" name="calle" class="form-control" aria-describedby="MaterialMapDisplay" placeholder="Domicilio" readonly  >
+                <!--<input type="hidden" id="calle" name="calle" class="form-control" >-->
                 <input type="hidden" id="geolocation" name="geolocation">
                 <label for="calle">Domicilio</label>
                 <button type="button" class="btn btn-primary map">Mapa</button>
@@ -117,7 +123,7 @@
 
 
               </div>
-            <button tabindex="0"  class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+            <button tabindex="0"  class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" id="btnRegistrar" type="submit">Sign up</button>
             <div class="text-center">
               <hr>
               <p>¿ Ya estas registrado? <a href="login.html"> <em>Sign in. </em></a> </p>
