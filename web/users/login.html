@@ -28,7 +28,9 @@
 </head>
 
 <body>
+  <div class="login">
 
+  </div>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <!--<nav class="navbar navbar-expand-lg fixed-top navbar-green">-->
@@ -66,13 +68,13 @@
         <p class="h4 mb-4 text-center">Sign in</p>
         <div class="md-form">
           <i class="fa fa-envelope prefix"></i>
-          <input type="email" id="inputValidationEx" class="form-control validate">
+          <input type="email" id="email" name="email" class="form-control validate">
           <label for="inputValidationEx" data-error="wrong" data-success="right">Escribe tú E-mail</label>
         </div>
         <!-- Material input -->
         <div class="md-form">
             <i class="fa fa-lock prefix"></i>
-            <input type="password" id="inputValidationEx2" class="form-control validate">
+            <input type="password" id="password" name="password" class="form-control validate">
             <label for="inputValidationEx2" data-error="wrong" data-success="right">Escribe tú contraseña</label>
         </div>
         <div class="d-flex justify-content-between">
@@ -87,7 +89,7 @@
           </div>
         </div>
 
-        <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+        <button class="btn btn-info btn-block my-4" type="submit" id="btnLogin">Sign in</button>
 
         <div class="text-center">
           <p>¿No eres miembro?

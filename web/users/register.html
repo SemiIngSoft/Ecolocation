@@ -57,7 +57,9 @@
       </div>
     </div>
   </nav>
+<div class="register">
 
+</div>
   <!-- Page Content -->
   <div class="container mt-4 mb-4">
     <div class="col-lg-6 mx-auto">
@@ -68,7 +70,7 @@
               <div class="md-form form-group">
                 <i class="far fa-user prefix"></i>
                 <input type="text" id="materialRegisterFormFirstName" name = "pnombre" class="form-control" required>
-                <label for="materialRegisterFormFirstName">First name</label>
+                <label for="materialRegisterFormFirstName">Nombre </label>
               </div>
               <div class="md-form form-group">
                 <i class="far fa-user prefix"></i>
@@ -89,21 +91,21 @@
               <div class="md-form form-group">
                 <i class="fas fa-key prefix"></i>
                 <input type="password" id="materialRegisterFormPassword" name="password"class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
-                <label for="materialRegisterFormPassword">Password</label>
+                <label for="materialRegisterFormPassword">Contraseña</label>
 
               </div>
               <div class="md-form form-group">
 
                 <i class="fas fa-key prefix"></i>
                 <input type="password" id="materialRegisterFormPassword2" name= "passwordcon"class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
-                <label for="materialRegisterFormPassword2">Password Confirmation</label>
+                <label for="materialRegisterFormPassword2">Confirmación de contraseña</label>
                 <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4"> At least 8 characters and 1 digit </small>
               </div>
 
               <div class="md-form form-group">
                 <i class="fas fa-phone prefix"></i>
-                <input type="text" id="materialRegisterFormPhone" name="telefono" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
-                <label for="materialRegisterFormPhone">Phone number</label>
+                <input type="text" id="materialRegisterFormPhone" name="telefono" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock" maxlength="13">
+                <label for="materialRegisterFormPhone">Número de telefono</label>
               </div>
               <div class="md-form form-group">
                 <i class="fas fa-map-marked-alt prefix"></i>
@@ -177,8 +179,10 @@
 
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_nzqNDBfJopGdzH2sNBbgHS-iotxkN_c&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_nzqNDBfJopGdzH2sNBbgHS-iotxkN_c">
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script  src="../js/app.js"></script>
     <!--
     <script>
