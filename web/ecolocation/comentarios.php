@@ -11,7 +11,7 @@
  ?>
 <?php include '../templates/header.php'; ?>
 
-  <div class="comentarios">
+  <div class="comentarios"></div>
 
   <div class="container mt-3">
     <div class="row">

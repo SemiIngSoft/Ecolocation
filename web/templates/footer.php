@@ -2,7 +2,7 @@
     <!--fin container-->
     <!--.fin del contenido -->
     <!-- Footer -->
-    <footer class="footer my-5 py-5 bg-dark">
+    <footer class=" my-5 py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Ecolocation 2018</p>
       </div>

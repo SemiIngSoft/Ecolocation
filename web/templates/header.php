@@ -50,9 +50,7 @@
           <!--<li class="nav-item">
             <a class="nav-link" href="#">Services</a>
           </li>-->
-          <li class="nav-item">
-            <a class="nav-link" href="../php/functions/logout.php">Logout</a>
-          </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Mi Cuenta
@@ -60,7 +58,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Configuraciones</a>
               <hr>
-              <a class="dropdown-item" href="#">LogOut</a>
+              <a class="dropdown-item" href="../php/functions/logout.php">LogOut</a>
             </div>
           </li>
         </ul>

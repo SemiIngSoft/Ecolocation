@@ -57,6 +57,7 @@ $(function() {
   }
 
   if ($(".comentarios").length) {
+    console.log("Hola");
     var mapId = $("#mapId").val();
     $.ajax({
       type: 'POST',
@@ -94,7 +95,7 @@ $(function() {
       var infoWindowContent = $(`<div>
                                     <p><strong>Centro: </strong> ${nombre_de_centro}</p>
                                     <p><strong>Domicilio: </strong> ${domicilio_de_centro}</p>
-                                    <a href="comentarios.php?id=${id_del_centro}" class="btn btn-primary btn-sm ">Ver Opiniones</a>
+                                    <!--<a href="comentarios.php?id=${id_del_centro}" class="btn btn-primary btn-sm ">Ver Opiniones</a>-->
                                   </div>`);
 
       var marker = new google.maps.Marker({
