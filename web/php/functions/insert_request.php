@@ -1,15 +1,20 @@
 <?php
 function insert_request()
 {
-    include 'C:/xampp/htdocs/Ecolocation-master/test_conection/Conect.php';
-    $conexion    = OpenCon();
-    $descrip     = $_POST["descriptionFormRequest"];
-    $fecha       = $_POST["materialRequestFormDate"];
-    $idCentro    = 1;
-    $idCiudadano = 1;
-    
-    $sql = "INSERT INTO peticion (descripcion,fecha,estado,idCentroDeRecoleccion,IdCiudadano) 
-            VALUES ('$descrip','$fecha',1,$idCentro,$idCiudadano)";
+  include '../php/clases/Conexion.php';
+  $conexion = new Conexion();
+  $cnn = $conexion->getConexion();
+
+  $sql = "INSERT
+          INTO
+              peticion(
+                  descripcion,
+                  fecha,
+                  estado,
+                  idCentroDeRecoleccion,
+                  IdCiudadano
+              )
+          VALUES((:descripcion), (:fecha), (:estado), (:idCentroDeRecoleccion), (:IdCiudadano))";
     if (!$conexion) {
         echo "Error de Conexion";
     }
@@ -18,14 +23,14 @@ function insert_request()
     } else {
         echo "Error: " . $sql . "<br>" . $conexion->error;
     }
-    
+
     CloseCon($conexion);
     /*
     $q = $cnn -> prepare($sql);
     $q -> bindValue(":descrip", $descrip, PDO::PARAM_STR);
     $q -> bindValue(":fecha", $fecha, PDO::PARAM_STR);
     $q -> bindValue(":idCentro", $idCentro, PDO::PARAM_INT);
-    $q -> bindValue(":idCiudadano", $idCiudadano, PDO::PARAM_INT);   
+    $q -> bindValue(":idCiudadano", $idCiudadano, PDO::PARAM_INT);
     $q -> execute();
     */
 }

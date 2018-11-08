@@ -173,4 +173,22 @@ $(function() {
     }); //Fin btnOpinion
 
   }
+    $("#btnPedido").on('click', function(event) {
+      event.preventDefault();
+      /* Act on the event */
+    });
+    $("#btnDescargar").on('click', '.selector', function(event) {
+      event.preventDefault();
+      let pnombre = $("#pnombre").val();
+      let apellidos = $("#apellidos").val();
+      let telefono = $("#phoneNumber").val();
+      let domicilio = $("#domicilio").val();
+      let pedidotext = $("#pedidotext").val();
+      let fecha = $("#fecha").val()
+      let html = `<div class="card">
+                    <div class="card-header">
+                      PEDIDO
+                    </div>
+                  </div>`;
+    });
 });
