@@ -23,6 +23,10 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js">
+
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <!-- Custom styles for this template -->
   <link href="../css/heroic-features.css" rel="stylesheet">
@@ -38,7 +42,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" id='nav'>
           <li class="nav-item active">
             <a class="nav-link" href="../ecolocation/welcome.php">Home
               <span class="sr-only">(current)  </span>
@@ -56,8 +60,8 @@
               Mi Cuenta
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Configuraciones</a>
-              <hr>
+              <a class="dropdown-item" href="../ecolocation/configuraciones.php">Configuraciones</a>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="../php/functions/logout.php">LogOut</a>
             </div>
           </li>
@@ -65,3 +69,11 @@
       </div>
     </div>
   </nav>
+  <?php
+
+  $crumbs = explode("/",$_SERVER["REQUEST_URI"]);
+  $array_crumb = [];
+  foreach($crumbs as $crumb){
+      $array_crumb[] =ucfirst(str_replace(array(".php","_"),array(""," "),$crumb) . ' ');
+    }
+  ?>

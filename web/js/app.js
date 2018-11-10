@@ -213,7 +213,7 @@ if($(".register").length){
                 if (results[0]) {
                   map.setZoom(20);
                   infowindow.setContent(results[0].formatted_address);
-                  $("#cordenada").val(evt.latLng.lat() + "," + evt.latLng.lng());
+                  $("#geolocation").val(evt.latLng.lat() + "," + evt.latLng.lng());
                   $("#calle").val(results[0].formatted_address);
                   list.push(results[0].formatted_address);
                   //console.log(list);
