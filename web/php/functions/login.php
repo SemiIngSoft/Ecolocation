@@ -19,7 +19,7 @@
       return 1;
     }
     if (!password_verify($password,$result["password"])){
-      return 1;
+      return 2;
     }else{
       include '../clases/Sessions.php';
       //session_start();

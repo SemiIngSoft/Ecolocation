@@ -15,11 +15,13 @@
        <?php
        include '../php/functions/get_user_for_request.php';
        $informacion_usuario = get_user_request($Sessions->get("id"))[0];
-       echo "<pre>";
-       var_dump($informacion_usuario);
-       echo "</pre>";
+       //echo "<pre>";
+       //var_dump($informacion_usuario);
+       //echo "</pre>";
        ?>
+       <div class="peticion">
 
+       </div>
 
        <!-- Page Content -->
       <div class="container mt-4 mb-4">
@@ -89,13 +91,14 @@
                            <i class="fas fa-envelope-open-text prefix" style="color:#757575"></i>
                            <textarea
                            rows="5"
+                           type="text"
                            id="pedidotext"
-                           name="descriptionFormRequest"
-                           style="resize:none">
-                           </textarea>
+                           class="md-textarea form-control"
+                           ></textarea>
+
                            <label
-                           for="descriptionFormRequest"
-                           style="font-size:100%">
+                           for="pedidotext"
+                           >
                            Description of Collection Order
                           </label>
                         </div>

@@ -63,6 +63,7 @@
    $domicilio = $campos["calle"];
    $geolocation = $campos["geolocation"];
    $registro_validacion = validar_registro($campos);
+   $centro_id = 2;
    if (!empty($registro_validacion)){
      echo json_encode($registro_validacion);
      return;
@@ -70,6 +71,7 @@
    $sql = "INSERT INTO
            ciudadano (
                nombre,
+               id_centro,
                apellidoPaterno,
                apellidoMaterno,
                ubicacion,
@@ -80,6 +82,7 @@
            )
            VALUES (
                :nombre,
+               :id_centro,
                :apellidoP,
                :apellidoM,
                :ubicacion,
@@ -92,6 +95,7 @@
    $q = $cnn -> prepare($sql);
 
    $q -> bindValue(':nombre', $nombre, PDO::PARAM_STR);
+   $q -> bindValue(':id_centro', $centro_id, PDO::PARAM_INT);
    $q -> bindValue(":apellidoP", $apellidoP, PDO::PARAM_STR);
    $q -> bindValue(":apellidoM", $apellidoM, PDO::PARAM_STR);
    $q -> bindValue(":ubicacion", $geolocation, PDO::PARAM_STR);

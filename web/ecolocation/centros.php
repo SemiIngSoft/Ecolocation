@@ -1,10 +1,10 @@
 <?php include '../templates/header.php'; ?>
 <?php
-include '../php/clases/Sessions.php';
+#include '../php/clases/Sessions.php';
 
-$Sessions = new Sessions();
-$Sessions->start();
-$Sessions->verify_session();
+#$Sessions = new Sessions();
+#$Sessions->start();
+#$Sessions->verify_session();
 
 
  ?>
