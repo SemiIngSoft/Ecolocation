@@ -18,8 +18,9 @@
 <?php include '../templates/header.php'; ?>
 <!--Contenido-->
 <div class="container mt3" >
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-lg-6 ">
+      
       <div class="card">
         <div class="card-header text-center">
           Solicitar Recoleccion
@@ -35,7 +36,7 @@
       </div>
     </div>
     <div class="col-lg-6 ">
-      <div class="card">
+      <div class="card ">
         <div class="card-header text-center">
           Ver Centros De Recoleccion
         </div>
