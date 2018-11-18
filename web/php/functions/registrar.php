@@ -63,7 +63,25 @@
    $domicilio = $campos["calle"];
    $geolocation = $campos["geolocation"];
    $registro_validacion = validar_registro($campos);
-   $centro_id = 2;
+   $centros = [];
+   $min = [];
+   $coordinates = explode(',' , $geolocation);
+   include '../clases/CalculateDistance.php';
+   include 'get_coordenadas.php';
+   $json = get_centros();
+   foreach($json as $coordenada ){
+     $centros["ubicacion"][] = array($coordenada["ubicacion"]);
+     $coordenadasCentro = explode(',', $coordenada["ubicacion"]);
+     $CalculateDistance = new CalculateDistance();
+     $min[] =  $CalculateDistance -> vincentyGreatCircleDistance($coordinates[0],$coordinates[1], $coordenadasCentro[0], $coordenadasCentro[1]);
+   }
+   $array_id=[];
+   foreach ($json as $id) {
+     $array_id['id'][] = $id["id"];
+   }
+   $array_id_coordenada= array_combine($array_id['id'], $min);
+   $min_cen = array_keys($array_id_coordenada, min($array_id_coordenada));
+   $centro_id =  $min_cen[0];
    if (!empty($registro_validacion)){
      echo json_encode($registro_validacion);
      return;

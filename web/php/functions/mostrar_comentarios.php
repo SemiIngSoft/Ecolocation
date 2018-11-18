@@ -7,8 +7,6 @@
       ciudadano.id AS ciudadano_id,
       ciudadano.correo AS ciudadano_correo,
       opinion.id AS opinion_id,
-      centroderecoleccion.nombre AS centro_nombre,
-      centroderecoleccion.domicilio AS centro_domicilio,
       opinion.comentario AS opnion_comentario,
       opinion.fecha AS opinion_fecha,
       opinion.idCentroRecoleccion AS id_centro

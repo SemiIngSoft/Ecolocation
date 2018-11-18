@@ -2,6 +2,8 @@
   include "../php/functions/mostrar_comentarios.php";
   $centroID = $_GET["id"];
   $comentarios = mostrar_comentarios($centroID);
+  include '../php/functions/get_centro1.php';
+  $centro_info = get_centro($_GET["id"]);
   include '../php/clases/Sessions.php';
   //session_start();
   //Sessions::set("name", "jesse");
@@ -29,11 +31,11 @@
                   <div class="card-body">
                     <p class="lead">
                       <strong>Empresa: </strong>
-                      <?= $comentarios[0]["centro_nombre"] ?>
+                      <?= $centro_info["nombre"] ?>
                     </p>
                     <p>
                       <strong>Domicilio: </strong>
-                      <?= $comentarios[0]["centro_domicilio"]?>
+                      <?= $centro_info["domicilio"]?>
                     </p>
                     <!--<p><strong>Telefono: </strong> 33-15-45-46</p>-->
                   </div>

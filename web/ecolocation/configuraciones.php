@@ -18,7 +18,7 @@
   <div class="container mt-4 mb-4">
     <div class="col-lg-8 mx-auto">
       <div class="card">
-        <h5 class="card-header info-color white-text text-center py-4">
+        <h5 class="card-header  white-text text-center py-4 msu-green" >
           <strong>Peticion de recoleccion</strong>
         </h5>
         <div class="card-body px-lg-5 pt-0 ">

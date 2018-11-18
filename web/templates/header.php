@@ -27,6 +27,10 @@
 
   </script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/datatables.min.css"/>
+
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
+
 
   <!-- Custom styles for this template -->
   <link href="../css/heroic-features.css" rel="stylesheet">
@@ -34,7 +38,7 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top ocean-green">
     <!--<nav class="navbar navbar-expand-lg fixed-top navbar-green">-->
     <div class="container">
       <a class="navbar-brand" href="#">Ecolocation</a>
@@ -61,6 +65,8 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="../ecolocation/configuraciones.php">Configuraciones</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../ecolocation/pedidohistorico.php">Pedidos</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="../php/functions/logout.php">LogOut</a>
             </div>

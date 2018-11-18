@@ -27,7 +27,7 @@
       <div class="container mt-4 mb-4">
          <div class="col-lg-8 mx-auto">
             <div class="card">
-               <h5 class="card-header info-color white-text text-center py-4">
+               <h5 class="card-header white-text text-center py-4 msu-green">
                  <strong>Peticion de recoleccion</strong>
                </h5>
                <div class="card-body px-lg-5 pt-0" >
@@ -83,6 +83,7 @@
                            value="<?= $informacion_usuario["domicilio"] ?>"
                            readonly>
                            <label for="materialRequestFormLocalitation"> Localization</label>
+                           <input type="hidden" id="centro" value="<?=$informacion_usuario["id_centro"]?>">
                         </div>
                      </div>
                      <!--Linea Tres - Descripcion del pedido-->
@@ -118,6 +119,16 @@
                            required>
                         </div>
                      </div>
+                     <div class="form-row justify-content-center">
+                       <div class="md-form form-group col-md-6">
+                         <i class="fas fa-warehouse"></i>
+                         <input type="text" name="centro_fav" id="centro_fav" value="<?= $informacion_usuario["centro_fav"] ?>">
+                         <br>
+                         <small class="text-danger">*Se eligio el mejor centro desde tu ubicacion*</small>
+                         <label for="centro_fav">Centro de Recoleccion </label>
+
+                       </div>
+                     </div>
 
                      <!--Linea Cinco - Boton de pedido-->
                      <div class="form-row justify-content-center">
@@ -133,6 +144,7 @@
                           </button>
                         </div>
                      </div>
+
                      <!-- Modal - Descargar pedido -->
                      <div class="modal fade" id="pedidoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                        <div class="modal-dialog" role="document">

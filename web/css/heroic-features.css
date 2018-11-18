@@ -9,15 +9,25 @@
         padding: 0;
       }
 body {
+  background: #43C59E;
   /*padding-top: 54px;*/
-  background: #00C9FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: #00C9FF;*/  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);*/  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #92FE9D, #00C9FF);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 body > .container{
 
 
+}
+.ocean-green{
+  background-color: #79B473;
+}
+.msu-green{
+  background-color: #14453D;
+}
+.turquesa{
+  background-color: #1ADFEE;
 }
 
 @media (min-width: 992px) {
@@ -68,13 +78,13 @@ a{
     max-width: 100%; /* Max Width of the popover (depending on the container!) */
 }
 
-.footer {	
-    position: fixed;	
-    left: 0;	
-    bottom: 0;	
-    height: 100px;	
-    width: 100%;	
-    background-color: red;	
-    color: white;	
-    text-align: center;	
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
